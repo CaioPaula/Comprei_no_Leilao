@@ -1,0 +1,3 @@
+function openSideBar(){
+    document.querySelector("")
+}
