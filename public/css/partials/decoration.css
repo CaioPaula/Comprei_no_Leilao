@@ -1,0 +1,29 @@
+.triangle_1_green{
+    width: 100%;
+    background:#76A237;
+    transform: skewY(-5deg);
+}
+
+@media screen and (max-width:450px) {
+    .triangle_1_green{
+        height: calc(12rem);
+    }
+}
+
+@media screen and (max-width:350px){
+    .triangle_1_green{
+        height: calc(13rem);
+    }
+}
+
+@media screen and (max-width:315px){
+    .triangle_1_green{
+        height: calc(14rem);
+    }
+}
+
+@media screen and (max-width:270px){
+    .triangle_1_green{
+        height: calc(15rem);
+    }
+}

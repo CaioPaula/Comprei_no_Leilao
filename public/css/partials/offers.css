@@ -1,0 +1,77 @@
+.offers_zone{
+    justify-self: center;
+    width: 90%;
+    top: 5rem;
+    z-index: 2;
+    background-color: transparent;
+    position: absolute;
+}
+
+.offers_zone .offers_boxes_area{
+    justify-content: center;
+}
+
+.offers_zone .offer{
+    text-decoration: none;
+    color: black;
+    border-color: #0B253B;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: grid;
+    justify-self: center;
+    transition: all 0.2s;
+}
+
+.offers_zone .offer:hover,
+.offer:hover .offer:hover > :only-child{
+    background-color: #d8d8d8;
+}
+
+.offers_zone .offer:active{
+    box-shadow: inset gray 5px 5px 0 0;
+}
+
+.offers_zone .offer .offer_img{
+    border-color: #76A237;
+    border-radius: 1rem;
+}
+
+.offers_zone .offer .offer_img img{
+    width: 100%;
+}
+
+.offers_zone .price{
+    color: #0B253B;
+    font-weight: 500;
+}
+
+.offers_zone .price.now{
+    color: #76A237;
+    font-weight: 700;
+}
+
+.offers_zone .price.old{
+    text-decoration: line-through;
+    
+}
+
+@media screen and (max-width : 450px){
+    .offers_zone .offers_boxes_area{
+        display: grid;
+    }
+
+    .offers_zone .offer{
+        border-width: 5px;
+        border-style: solid;
+        margin: 1px;
+    }
+
+    .offers_zone .offer .offer_img{
+        border-width: 3px;
+        border-style: solid;
+    }
+
+    .offers_zone .offer .offer_img img{
+        border-radius: 13.5px;
+    }
+}
